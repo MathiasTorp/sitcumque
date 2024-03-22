@@ -1,0 +1,36 @@
+{
+  "name": "@diagrams-ts/graphviz-functional-ts",
+  "version": "0.5.0",
+  "description": "create dot-language output from typescript functions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "balles",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/balles/diagrams-ts.git",
+    "directory": "packages/graphviz-functional-ts"
+  },
+  "scripts": {
+    "build": "yarn tsc",
+    "lint": "yarn prettier . --check && yarn eslint . --ext .ts",
+    "format": "yarn prettier . --write"
+  },
+  "devDependencies": {
+    "@types/jsdom": "16.2.10",
+    "@types/node": "15.0.1",
+    "@types/node-fetch": "2.5.10",
+    "@typescript-eslint/eslint-plugin": "4.22.0",
+    "@typescript-eslint/parser": "4.22.0",
+    "eslint": "7.25.0",
+    "jsdom": "16.5.3",
+    "lerna": "^3.22.0",
+    "prettier": "2.2.1",
+    "ts-node": "9.1.1",
+    "typescript": "4.1.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

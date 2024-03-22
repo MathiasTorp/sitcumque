@@ -1,0 +1,48 @@
+{
+  "name": "@diagrams-ts/core",
+  "version": "0.5.0",
+  "description": "TypeScript port of diagrams",
+  "main": "dist/diagrams.js",
+  "types": "dist/diagrams.d.ts",
+  "author": "balles",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=12"
+  },
+  "diagrams-python-sha": "8073ceaa8f6f1f952c9a361fa8d00d2780b3f0a8",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/balles/diagrams-ts.git",
+    "directory": "packages/core"
+  },
+  "scripts": {
+    "build": "yarn tsc",
+    "lint": "yarn prettier . --check && yarn eslint . --ext .ts",
+    "test": "yarn jest ./src",
+    "format": "yarn prettier . --write",
+    "generate-providers": "yarn ts-node scripts/generate-providers master && yarn format"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.22",
+    "@types/node": "15.0.1",
+    "@types/node-fetch": "2.5.10",
+    "@types/rimraf": "3.0.0",
+    "@typescript-eslint/eslint-plugin": "4.22.0",
+    "@typescript-eslint/parser": "4.22.0",
+    "eslint": "7.25.0",
+    "jest": "26.6.3",
+    "node-fetch": "2.6.1",
+    "prettier": "2.2.1",
+    "rimraf": "3.0.2",
+    "ts-jest": "26.5.5",
+    "ts-node": "9.1.1",
+    "typescript": "4.1.2"
+  },
+  "dependencies": {
+    "@diagrams-ts/graphviz-functional-ts": "^0.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
